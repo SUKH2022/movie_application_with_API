@@ -8,14 +8,19 @@
 
 /* Body styles */
 body {
-    background-color: #22254b;
+    background-color: #223c4b;
     font-family: "Poppins", sans-serif;
     margin: 0;
 }
 
+/* link styles */
+a{
+    text-decoration: none;
+}
+
 /* Header styles */
 header {
-    background-color: #373b69;
+    background-color: #457481;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
@@ -31,7 +36,7 @@ h1 {
 /* Search input styles */
 .search {
     background-color: transparent;
-    border: 2px solid #6a72e8;
+    border: 2px solid #6ab9e8;
     border-radius: 50px;
     color: #fff;
     font-family: inherit;
@@ -40,11 +45,11 @@ h1 {
 }
 
 .search::placeholder {
-    color: #7378c5;
+    color: #73b2c5;
 }
 
 .search:focus {
-    background-color: #22254b;
+    background-color: #22414b;
     outline: none;
 }
 
@@ -66,7 +71,7 @@ div {
 #showTopRated,
 button#loadMore,
 button#returnToTop {
-    background-color: #373b69;
+    background-color: #376069;
     color: #fff;
     border: none;
     padding: 0.5rem 1rem;
@@ -78,7 +83,7 @@ button#returnToTop {
 #showTopRated:hover,
 button#loadMore:hover,
 button#returnToTop:hover {
-    background-color: #22254b;
+    background-color: #22404b;
 }
 
 /* Main container styles */
@@ -89,7 +94,7 @@ main {
 
 /* Movie card styles */
 .movie {
-    background-color: #373b69;
+    background-color: #375b69;
     border-radius: 3px;
     box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
@@ -118,7 +123,7 @@ main {
 
 /* Movie rating styles */
 .movie-info span {
-    background-color: #22254b;
+    background-color: #22404b;
     border-radius: 3px;
     font-weight: bold;
     padding: 0.25rem 0.5rem;
@@ -138,7 +143,9 @@ main {
 
 /* Overview styles */
 .overview {
-    background-color: #fff;
+    border-radius: 2rem 0;
+    background-color: #000;
+    color: #fefefe;
     padding: 2rem;
     position: absolute;
     max-height: 100%;
@@ -172,7 +179,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-    background: linear-gradient(180deg, #222, #4a4e92);
+    background: linear-gradient(180deg, #222, #457481);
     border-radius: 10px;
 }
 
