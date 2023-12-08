@@ -1,0 +1,187 @@
+/* Import Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+/* universal styling */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: #22254b;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+}
+
+/* Header styles */
+header {
+    background-color: #373b69;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+/* H1 styles */
+h1 {
+    font-size: 1.2rem;
+    /* margin-left: 80px; */
+    color: #fefefe;
+}
+
+/* Search input styles */
+.search {
+    background-color: transparent;
+    border: 2px solid #6a72e8;
+    border-radius: 50px;
+    color: #fff;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+.search::placeholder {
+    color: #7378c5;
+}
+
+.search:focus {
+    background-color: #22254b;
+    outline: none;
+}
+
+/* styling for the div element */
+div {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Student information styles */
+#studentInfo {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+/* Button styles for Show Student Info, Show Top Rated Movies, Load More, and return to top button */
+#showStudentInfo,
+#showTopRated,
+button#loadMore,
+button#returnToTop {
+    background-color: #373b69;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#showStudentInfo:hover,
+#showTopRated:hover,
+button#loadMore:hover,
+button#returnToTop:hover {
+    background-color: #22254b;
+}
+
+/* Main container styles */
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Movie card styles */
+.movie {
+    background-color: #373b69;
+    border-radius: 3px;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    position: relative;
+    margin: 1rem;
+    width: 300px;
+}
+
+/* Movie image styles */
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem 1rem;
+    letter-spacing: 0.5px;
+}
+
+.movie-info h3 {
+    margin: 0;
+}
+
+/* Movie rating styles */
+.movie-info span {
+    background-color: #22254b;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+    color: rgb(39, 189, 39);
+}
+
+.movie-info span.orange {
+    color: orange;
+}
+
+.movie-info span.red {
+    color: rgb(189, 42, 42);
+}
+
+/* Overview styles */
+.overview {
+    background-color: #fff;
+    padding: 2rem;
+    position: absolute;
+    max-height: 100%;
+    overflow: auto;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.overview h3 {
+    margin-top: 0;
+}
+
+/* hover effect on overview */
+.movie:hover .overview {
+    transform: translateY(0);
+}
+
+/* More Return to Top button styles */
+button#returnToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Custom scrollbar */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: linear-gradient(180deg, #222, #4a4e92);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #222;
+}
+
+/* Custom scrollbar for Firefox */
+body {
+    scrollbar-width: 12px;
+    scrollbar-color: #555 #222;
+}

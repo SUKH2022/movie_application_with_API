@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- title of the webpage -->
+        <title>Movie App</title>
+        <!-- Link to the CSS -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- Link to the Js -->
+        <script src="js/script.js" defer></script>
+    </head>
+    <body>
+        <!-- Header section -->
+        <header>
+            <!-- link to the index.html page with the title -->
+            <a href="index.html">
+                <h1>Movie Application</h1>
+            </a>
+            <form id="form">
+                <!-- Form for searching movies -->
+                <input
+                    type="text"
+                    id="search"
+                    placeholder="Search"
+                    class="search"
+                />
+            </form>
+        </header>
+        <!-- Main content section -->
+        <div>
+            <!-- student info. -->
+            <p id="studentInfo"></p>
+            <!-- Button to show student info. -->
+            <button id="showStudentInfo">Show Student Info</button>
+            <!-- Button to show top-rated movies -->
+            <button id="showTopRated">Show Top Rated Movies</button>
+            <!-- Button to load more movies -->
+            <button id="loadMore">Load More</button>
+        </div>
+        <!-- Main section to display the movie cards -->
+        <main id="main"></main>
+        <!-- Button to return to the top of the page -->
+        <button id="returnToTop" onclick="scrollToTop()">Return to Top</button>
+    </body>
+</html>
